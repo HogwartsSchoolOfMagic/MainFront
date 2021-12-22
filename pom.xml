@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.ninjaenterprise</groupId>
+  <artifactId>main-front</artifactId>
+  <version>0.6.5</version>
+  <packaging>pom</packaging>
+  <name>Main Front</name>
+  <description>💻 The application interface using the server side is Ninja 🌐</description>
+
+  <properties>
+    <!-- Plugin properties -->
+    <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
+    <node.version>v14.17.6</node.version>
+
+    <!-- Code analyzer: SonarCloud -->
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.organization>ninja-enterprise</sonar.organization>
+    <sonar.projectKey>NinjaEnterprise_MainFront</sonar.projectKey>
+    <sonar.sources>src</sonar.sources>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <version>${frontend-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>install node and npm</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>install-node-and-npm</goal>
+            </goals>
+            <configuration>
+              <nodeVersion>${node.version}</nodeVersion>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm install</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>i --legacy-peer-deps install</arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm run lint</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run lint</arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
