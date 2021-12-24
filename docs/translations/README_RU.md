@@ -4,9 +4,18 @@
 </div>
 
 <div align="center">
-    <a href="https://github.com/NinjaEnterprise/MainFront/blob/master/docs/README.md">
-        <img alt="english-version" src="https://raw.githubusercontent.com/NinjaEnterprise/MainFront/master/docs/assets/languages/english.png"/>
+    <a href="https://github.com/NinjaEnterprise/SearchLibrary/blob/master/docs/translations/README_RU.md">
+        <img alt="russian-version" src="https://raw.githubusercontent.com/NinjaEnterprise/SearchLibrary/master/assets/languages/russian.png"/>
     </a>
+</div>
+
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/NinjaEnterprise/MainFront" height="25" alt="last-commit" />
+    <img src="https://tokei.rs/b1/github/NinjaEnterprise/MainFront?category=code" height="25" alt="code-lines" />
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=NinjaEnterprise_MainFront&metric=coverage" height="25" alt="sonar-cloud-bugs" />
+    <img src="https://github.com/NinjaEnterprise/MainFront/actions/workflows/check-style.yml/badge.svg" height="25" alt="checking-style" />
+    <img src="https://github.com/NinjaEnterprise/MainFront/actions/workflows/sonar.yml/badge.svg" height="25" alt="checking-sonar" />
+    <img src="https://github.com/NinjaEnterprise/MainFront/actions/workflows/build.yml/badge.svg" height="25" alt="build" />
 </div>
 
 ### 📖 Описание
