@@ -1,14 +1,17 @@
 ---
-name: Feature request about: Suggest an idea for this project title: '[FEATURE] Functionality short name.' labels: '
-type: enhancement, status: backlog, priority: low' assignees: 'Bangerok'
+name: Feature request
+about: Предложите идею для этого проекта
+title: '[FEATURE] Краткое название функциональности.'
+labels: 'type: enhancement, status: backlog, priority: low'
+assignees: 'SmithyVL'
 
 ---
 
-**Description of functionality**
-A clear and concise description of what you want to happen.
+**Описание функциональности**
+Четкое и краткое описание того, что вы хотите, чтобы произошло.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Опишите альтернативные варианты**
+Четкое и краткое описание любых альтернативных решений или функций, которые вы рассмотрели.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Дополнительный контекст**
+Добавьте любой другой контекст или скриншоты о запросе функциональности здесь.

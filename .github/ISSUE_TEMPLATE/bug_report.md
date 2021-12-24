@@ -1,28 +1,30 @@
 ---
-name: Bugs report about: Create a report to help us improve title: '[BUG] Short name of the error.' labels: 'type: bug,
-priority: low, status: backlog' assignees: 'Bangerok'
+name: Bugs report
+about: Создайте отчет об ошибке, чтобы мы могли заняться улучшением
+title: '[BUG] Короткое название ошибки.'
+labels: 'type: bug, priority: low, status: backlog'
+assignees: 'SmithyVL'
 
 ---
 
-**Error description**
-A clear and concise description of the error.
+**Описание ошибки**
+Четкое и краткое описание ошибки.
 
-**Reproduction**
-Steps to Reproduce Behavior:
+**Воспроизведение**
+Шаги по воспроизведению поведения:
+1. Перейти сюда '...'
+2. Нажать на '....'
+3. Прокрутить до '....'
+4. Видим ошибку.
 
-1. Go here '...'
-2. Click on the '....'
-3. Scroll to '....'
-4. See error.
+**Ожидаемое поведение**
+Четкое и краткое описание того, чего вы ожидали.
 
-**Expected behavior**
-A clear and concise description of what you expected.
+**Возможное решение проблемы**
+Подробное и понятное решение проблемы в виде списка.
 
-**Possible solution to the problem**
-A detailed and understandable solution to the problem using lists.
+**Скриншоты**
+Если возможно, пожалуйста, прикрепите скриншоты, чтобы объяснить вашу проблему.
 
-**Screenshots**
-If possible, please add screenshots to explain your problem.
-
-**Additional context**
-Add any other problem context here.
+**Дополнительный контекст**
+Добавьте сюда любой другой контекст проблемы.

@@ -1,11 +1,14 @@
 ---
-name: Refactoring issues about: Optimization, improvement and formatting of the code title: '[REFACTORING] Short title
-of refactoring works.' labels: 'type: maintenance, status: backlog, priority: low' assignees: Bangerok
+name: Refactoring issues
+about: Оптимизация, улучшение и форматирование кода
+title: '[REFACTORING] Краткое название работ по рефакторингу.'
+labels: 'type: maintenance, status: backlog, priority: low'
+assignees: 'SmithyVL'
 
 ---
 
-**Description of refactoring**
-A clear and concise description of what you want to happen.
+**Описание рефакторинга**
+Четкое и краткое описание того, что вы хотите, чтобы произошло.
 
-**Additional context**
-Add any other context or screenshots about the refactoring issue here.
+**Дополнительный контекст**
+Добавьте любой другой контекст или скриншоты о проблеме рефакторинга здесь.

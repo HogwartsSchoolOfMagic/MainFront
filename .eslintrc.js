@@ -8,11 +8,11 @@ module.exports = {
   rules: {
     "no-unused-vars": ["error", {"vars": "all", "args": "after-used", "ignoreRestSiblings": false}]
   },
-  parser: 'vue-eslint-parser',
+  /*parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: "babel-eslint",
+    parser: "@babel/eslint-parser",
     sourceType: 'module',
-  },
+  },*/
   env: {
     "node": true,
   },

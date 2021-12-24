@@ -1,78 +1,86 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
-    <h1>Main Front</h1>
+    <h1>Основной интерфейс проекта Ninja</h1>
 </div>
 
 <div align="center">
-    <a href="https://github.com/NinjaEnterprise/MainFront/blob/master/docs/translations/README_RU.md">
-        <img alt="russian-version" src="https://raw.githubusercontent.com/NinjaEnterprise/MainFront/master/docs/assets/languages/russian.png"/>
+    <a href="https://github.com/NinjaEnterprise/MainFront/blob/master/docs/translations/README_EN.md">
+        <img alt="russian-version" src="https://raw.githubusercontent.com/NinjaEnterprise/MainFront/master/docs/assets/languages/english.png"/>
     </a>
 </div>
 
-### 📖 Description
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/NinjaEnterprise/MainFront" height="25" alt="last-commit" />
+    <img src="https://tokei.rs/b1/github/NinjaEnterprise/MainFront?category=code" height="25" alt="code-lines" />
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=NinjaEnterprise_MainFront&metric=coverage" height="25" alt="sonar-cloud-bugs" />
+    <img src="https://github.com/NinjaEnterprise/MainFront/actions/workflows/eslint.yml/badge.svg" height="25" alt="eslint" />
+    <img src="https://github.com/NinjaEnterprise/MainFront/actions/workflows/sonar.yml/badge.svg" height="25" alt="checking-sonar" />
+</div>
+
+### 📖 Описание
 ___
 
-Client interface. For now, for the study of technology.
+Клиентский интерфейс. Пока что используется для изучения технологий.
 
-### ❗ Requirements
+### ❗ Требования
 ___
 
-- **NodeJS (stable)**: v14.17.6.
+- **NodeJS (стабильная)**: v14.17.6;
 
-### 📋 Start-up instructions
+### 📋 Инструкция по запуску
 ___
 
-*All commands are executed in the console. For all actions, you can use the IDE (for example: Intellij Idea), but who
-knows about it — and will do it, the instruction is not needed.*
+*Все команды выполняются в консоли. Для всех действий можно использовать IDE (например: Intellij Idea), но кто это знает
+— тот так и будет делать и инструкция ему не нужна.*
 <details style="margin-left: 40px">
-   <summary><b>Clone Repository</b></summary>
+   <summary><b>Клонирование репозитория</b></summary>
    <ol>
-      <li>Create a folder: <code>mkdir GitProjects</code> (the folder name can be anything, but you will need to 
-      continue to use only it);</li>
-      <li>Go to the folder: <code>cd GitProjects</code>;</li>
-      <li>Cloning a repository: <code>git clone https://github.com/NinjaEnterprise/MainFront.git</code>;</li>
-      <li>Go to the folder: <code>cd MainFront</code>.</li>
-      <li>Complete.</li>
+      <li>Создаем папку: <code>mkdir GitProjects</code> (имя папки может быть любым, но вам нужно будет продолжать использовать только
+   его);</li>
+      <li>Переходим в папку: <code>cd GitProjects</code>;</li>
+      <li>Клонируем репозиторий: <code>git clone https://github.com/NinjaEnterprise/MainFront.git</code>;</li>
+      <li>Переходим в созданную папку: <code>cd MainFront</code>.</li>
+      <li>Выполнено.</li>
    </ol>
 </details>
 
 <details style="margin-left: 40px">	
-   <summary><b>Run code</b></summary>
+   <summary><b>Запуск проекта</b></summary>
    <ol>
-      <li>Install all dependencies: `npm install`;</li>
-      <li>Started application: `npm run serve`;</li>
-      <li>Vue application will start here — `http://localhost:3000` (_3000 — default port_).</li>
+      <li>Установить все зависимости: `npm install`;</li>
+      <li>Запустить: `npm run serve`;</li>
+      <li>Приложение Vue запустится и будет доступно по адресу — `http://localhost:3000` (_3000 — стандартный порт_).</li>
    </ol>
 </details>
 
-### ⚙️ Includes functionality
+### ⚙️ Включает функциональность
 ___
 
-- **Authorization**: classic (_email/password_) and google;
-- **Registration**: classic and google;
-- **Verification**: 
-  - email confirmation via verification token;
-  - re-request verification token.
-- **Customizing the application**:
-  - language;
-  - dark/light theme;
-  - show/hide sidebar.
-- Jump across multiple pages.
+- **Авторизация**: классическая (_email/password_) и google;
+- **Регистрация**: классическая и google;
+- **Верификация**:
+  - подтверждение электронной почты через токен верификации;
+  - повторный запрос токена верификации.
+- **Кастомизация приложения**:
+  - язык;
+  - темная/светлая тема;
+  - показать/скрыть боковую панель.
+- Переход по нескольким страницам.
 
-### 🔨 Technology stack
+### 🔨 Стек технологий
 ___
 
-- **Vue 2** (_followed by switching to Vue 3_);
-- **Vuex**: storage;
-- **Vue Router**: routing pages;
-- **Vuetify 2** (_followed by switching to Vuetify 3_): client interface using components and layout;
-- **Vue i18n**: localization;
-- **Axios**: client-server communication;
-- **Vue CLI**: launching the application.
+- **Vue 2** (_планируется переход на Vue 3_);
+- **Vuex**: хранилище;
+- **Vue Router**: маршрутизация страниц;
+- **Vuetify 2** (_планируется переход на Vuetify 3_): клиентский интерфейс, использующий компоненты и макеты;
+- **Vue i18n**: локализация;
+- **Axios**: клиент-серверная связь;
+- **Vue CLI**: запуск приложения.
 
-### 🎫 License
+### 🎫 Лицензия
 ___
 
-**[MIT](https://github.com/NinjaEnterprise/MainFront/blob/master/LICENSE)**
+**[Creative Commons Legal Code](https://github.com/NinjaEnterprise/MainFront/blob/master/LICENSE)**
 
-_Copyright ©2021, Vladislav [[Bangerok]](https://github.com/Bangerok) Kuznetsov_
+_Copyright ©2021, Владислав [[SmithyVL]](https://github.com/SmithyVL) Кузнецов_

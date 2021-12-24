@@ -6,7 +6,6 @@
   <groupId>io.github.ninjaenterprise</groupId>
   <artifactId>main-front</artifactId>
   <version>0.6.5</version>
-  <packaging>pom</packaging>
   <name>Main Front</name>
   <description>💻 The application interface using the server side is Ninja 🌐</description>
 
@@ -16,9 +15,9 @@
     <node.version>v14.17.6</node.version>
 
     <!-- Code analyzer: SonarCloud -->
+    <sonar.projectKey>NinjaEnterprise_MainFront</sonar.projectKey>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.organization>ninja-enterprise</sonar.organization>
-    <sonar.projectKey>NinjaEnterprise_MainFront</sonar.projectKey>
     <sonar.sources>src</sonar.sources>
   </properties>
 
@@ -46,7 +45,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>i --legacy-peer-deps install</arguments>
+              <arguments>install</arguments>
             </configuration>
           </execution>
           <execution>
