@@ -1,8 +1,8 @@
 ---
-name: Docs issues
+name: 📖 Docs issues
 about: Улучшения или дополнения к документации
 title: '[DOCS] Краткое название работ по проектной документации.'
-labels: 'type: maintenance, status: backlog, priority: low'
+labels: 'type: documentation, status: backlog, priority: low'
 assignees: 'SmithyVL'
 
 ---

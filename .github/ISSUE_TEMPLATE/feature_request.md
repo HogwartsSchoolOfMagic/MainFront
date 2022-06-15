@@ -1,8 +1,8 @@
 ---
-name: Feature request
+name: 🚀 Feature request
 about: Предложите идею для этого проекта
 title: '[FEATURE] Краткое название функциональности.'
-labels: 'type: enhancement, status: backlog, priority: low'
+labels: 'type: feature, status: backlog, priority: low'
 assignees: 'SmithyVL'
 
 ---

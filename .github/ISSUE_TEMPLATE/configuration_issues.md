@@ -1,8 +1,8 @@
 ---
-name: Configuration issues
+name: 🧰 Configuration issues
 about: Различные предложения по настройке проекта
 title: '[CONFIGURATION] Краткое название новой конфигурации.'
-labels: 'type: maintenance, status: backlog, priority: low'
+labels: 'type: configuration, status: backlog, priority: low'
 assignees: 'SmithyVL'
 
 ---

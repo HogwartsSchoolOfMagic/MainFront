@@ -1,8 +1,8 @@
 ---
-name: Refactoring issues
+name: 🧾 Refactoring issues
 about: Оптимизация, улучшение и форматирование кода
 title: '[REFACTORING] Краткое название работ по рефакторингу.'
-labels: 'type: maintenance, status: backlog, priority: low'
+labels: 'type: refactoring, status: backlog, priority: low'
 assignees: 'SmithyVL'
 
 ---
