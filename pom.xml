@@ -2,110 +2,134 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>io.github.hogwartsschoolofmagic</groupId>
-  <artifactId>main-front</artifactId>
-  <version>0.6.5</version>
-  <name>Main Front</name>
-  <description>💻 The application interface using the server side is MagicMultiRepo 🌐</description>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.hogwartsschoolofmagic</groupId>
+    <artifactId>main-front</artifactId>
+    <version>0.6.5</version>
+    <name>Main Front</name>
+    <description>💻 The application interface using the server side is MagicMultiRepo 🌐</description>
 
-  <properties>
-    <!-- Compiler properties -->
-    <java.version>18</java.version>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <organization>
+        <name>HogwartsSchoolOfMagic</name>
+        <url>https://github.com/HogwartsSchoolOfMagic</url>
+    </organization>
 
-  <profiles>
-    <profile>
-      <id>front-eslint</id>
-      <properties>
-        <!-- Plugin properties -->
-        <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
-        <node.version>v14.17.6</node.version>
-      </properties>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <!--suppress MavenModelInspection -->
-            <version>${frontend-maven-plugin.version}</version>
-            <executions>
-              <execution>
-                <id>install node and npm</id>
-                <phase>validate</phase>
-                <goals>
-                  <goal>install-node-and-npm</goal>
-                </goals>
-                <configuration>
-                  <nodeVersion>${node.version}</nodeVersion>
-                </configuration>
-              </execution>
-              <execution>
-                <id>npm install</id>
-                <phase>validate</phase>
-                <goals>
-                  <goal>npm</goal>
-                </goals>
-                <configuration>
-                  <arguments>install</arguments>
-                </configuration>
-              </execution>
-              <execution>
-                <id>npm run lint</id>
-                <phase>validate</phase>
-                <goals>
-                  <goal>npm</goal>
-                </goals>
-                <configuration>
-                  <arguments>run lint</arguments>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
+    <!-- List the core committers -->
+    <developers>
+        <developer>
+            <id>SmithyVL</id>
+            <name>Vladislav Kuznetsov</name>
+            <organization>HogwartsSchoolOfMagic</organization>
+            <organizationUrl>https://github.com/HogwartsSchoolOfMagic</organizationUrl>
+            <roles>
+                <role>Architect</role>
+                <role>Analyst</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>0</timezone>
+            <properties>
+                <vk-url>https://vk.com/vladislav_kuznetsov</vk-url>
+            </properties>
+        </developer>
+    </developers>
 
-    <profile>
-      <id>sonar-submodule</id>
-      <properties>
-        <!-- Plugin properties -->
-        <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
+    <properties>
+        <!-- Compiler properties -->
+        <java.version>18</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-        <!-- Code analyzer: SonarCloud -->
-        <sonar.projectKey>HogwartsSchoolOfMagic_MainFront</sonar.projectKey>
-        <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
-        <sonar.organization>hogwarts-school-of-magic</sonar.organization>
-        <sonar.sources>src</sonar.sources>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-      </properties>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <!--suppress MavenModelInspection -->
-            <version>${sonar-maven-plugin.version}</version>
-            <executions>
-              <execution>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sonar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+    <profiles>
+        <profile>
+            <id>front-eslint</id>
+            <properties>
+                <!-- Plugin properties -->
+                <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
+                <node.version>v14.17.6</node.version>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.eirslett</groupId>
+                        <artifactId>frontend-maven-plugin</artifactId>
+                        <!--suppress MavenModelInspection -->
+                        <version>${frontend-maven-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>install node and npm</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>install-node-and-npm</goal>
+                                </goals>
+                                <configuration>
+                                    <nodeVersion>${node.version}</nodeVersion>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>npm install</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <configuration>
+                                    <arguments>install</arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>npm run lint</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <configuration>
+                                    <arguments>run lint</arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>sonar-submodule</id>
+            <properties>
+                <!-- Plugin properties -->
+                <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
+
+                <!-- Code analyzer: SonarCloud -->
+                <sonar.projectKey>HogwartsSchoolOfMagic_MainFront</sonar.projectKey>
+                <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+                <sonar.organization>hogwarts-school-of-magic</sonar.organization>
+                <sonar.sources>src</sonar.sources>
+                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonarsource.scanner.maven</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <!--suppress MavenModelInspection -->
+                        <version>${sonar-maven-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sonar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
